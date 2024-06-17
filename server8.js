@@ -117,7 +117,7 @@ app.post("/auth/login", async (req, res) => {
         if (err) throw err;
         user.authToken = token;
         user.save();
-
+console.log('login token',token);
         res
           .cookie("token", token, {
             sameSite: "none",
