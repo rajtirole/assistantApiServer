@@ -120,7 +120,7 @@ app.post("/auth/login", async (req, res) => {
 
         res
           .cookie("token", token, {
-            sameSite: "strict",
+            sameSite: "none",
           })
           .json({
             success: "true",
