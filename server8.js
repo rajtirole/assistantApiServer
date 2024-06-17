@@ -117,11 +117,10 @@ app.post("/auth/login", async (req, res) => {
         if (err) throw err;
         user.authToken = token;
         user.save();
+        const options = { httpOnly: true, secure: true ,sameSite:'none'};
 console.log('login token',token);
-        res
-          .cookie("token", token, {
-            sameSite: "lax",
-          })
+res.setHeader('token', token)
+.cookie("token", token, options)
           .json({
             success: "true",
             token,
