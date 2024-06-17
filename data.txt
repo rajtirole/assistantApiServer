@@ -1,0 +1,4 @@
+name of resume is raja
+name of cooler is 'coler123'
+"name":'raja tirole'
+the name of robber is raja tirole

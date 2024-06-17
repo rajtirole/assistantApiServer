@@ -1,0 +1,11 @@
+{
+  "assistantId": "asst_pVLAZo5m29LS9CXxJtRikpxl",
+  "name": "Financial Analyst Assistant",
+  "instructions": "You are an expert financial analyst. Use your knowledge base to answer questions about financial statements and also the other queries of the user.",
+  "model": "gpt-4-turbo-preview",
+  "tools": [
+    {
+      "type": "file_search"
+    }
+  ]
+}
